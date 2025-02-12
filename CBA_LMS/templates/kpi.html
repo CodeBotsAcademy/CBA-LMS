@@ -1,32 +1,9 @@
-<!DOCTYPE html>
-{% load static %}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <title>
-        {% block title %}
-            Menu de navegación
-        {% endblock %}
-    </title>
-</head>
-<body>
-    <div class="side-menu">
-        <div class="brand-name">
-            <h1>CBA</h1>
-        </div>
-        <ul>
-            <li><i class='bx bxs-dashboard'></i>&nbsp;<span>Tablero</span></li>
-            <li><i class='bx bxs-graduation'></i>&nbsp;<span>Estudiantes</span></li>
-            <li><i class='bx bxs-book-reader'></i>&nbsp;<span>Profesores</span></li>
-            <li><i class='bx bxs-school'></i>&nbsp;<span>Academia</span></li>
-            <li><i class='bx bx-money-withdraw'></i>&nbsp;<span>Financiero</span></li>
-            <li><i class='bx bx-help-circle' ></i>&nbsp;<span>Ayuda</span></li>
-            <li><i class='bx bx-cog' ></i>&nbsp;<span>Ajustes</span></li>
-        </ul>
-    </div>
+{% extends 'layout.html' %}
+
+{% block title %}
+    KPIs
+{% endblock %}
+{% block content %}
     <div class="container">
         <div class="header">
             <div class="nav">
@@ -157,5 +134,4 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+{% endblock %}

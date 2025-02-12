@@ -5,9 +5,137 @@
 {% endblock %}
 
 {% block content %}
-    <section>
+    <!-- <section>
         <h1>Home</h1>
         <p>Check out my <a href="/about">About Page</a></p>
-    </section>
-{% endblock %}
+    </section>-->
 
+    <div class="header">
+        <div class="nav">
+            <div class="search">
+                <input type="text" placeholder="Search..">
+                <button type="submit"><i class='bx bx-search-alt'></i></button>
+            </div>
+            <div class="user">
+                <a href="#" class="btn">Adicionar</a>
+                <i class='bx bxs-bell-ring' ></i>
+                <div class="img-case">
+                    <img src="{% media 'user.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="cards">
+            <div class="card">
+                <div class="box">
+                    <h1>52</h1>
+                    <h3>Estudiantes</h3>
+                </div>
+                <div class="icon-case">
+                    <img src="{% media 'students.png' %}" alt="">   
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <h1>7</h1>
+                    <h3>Profesores</h3>
+                </div>
+                <div class="icon-case">
+                    <img src="{% media 'teachers.png' %}" alt="">   
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <h1>5</h1>
+                    <h3>Salónes</h3>
+                </div>
+                <div class="icon-case">
+                    <img src="{% media 'schools.png' %}" alt="">   
+                </div>
+            </div>
+            <div class="card">
+                <div class="box">
+                    <h1>$12M</h1>
+                    <h3>Ingreso</h3>
+                </div>
+                <div class="icon-case">
+                    <img src="{% media 'income.png' %}" alt="">   
+                </div>
+            </div>
+        </div>
+        <div class="content-2">
+            <div class="recent-payments">
+                <div class="title">
+                    <h2>Pagos Recientes</h2>
+                    <a href="#" class="btn">Ver todos</a>
+                </div>
+                <table>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Curso</th>
+                        <th>Balance</th>
+                    </tr>
+                    <tr>
+                        <td>Samuel Santiago</td>
+                        <td>13</td>
+                        <td>Desarrollo con Unity</td>
+                        <td><a href="#" class="btn">Detalle</a></td>
+                    </tr>
+                    <tr>
+                        <td>Isaac Mateo</td>
+                        <td>15</td>
+                        <td>Python Professional II</td>
+                        <td><a href="#" class="btn">Detalle</a></td>
+                    </tr>
+                    <tr>
+                        <td>Salome Sulez</td>
+                        <td>8</td>
+                        <td>Programación Visual</td>
+                        <td><a href="#" class="btn">Detalle</a></td>
+                    </tr>
+                    <tr>
+                        <td>Dante Daniel</td>
+                        <td>8</td>
+                        <td>Programación Visual</td>
+                        <td><a href="#" class="btn">Detalle</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="new-students">
+                <div class="title">
+                    <h2>Estudiantes nuevos</h2>
+                    <a href="#" class="btn">Ver todos</a>
+                </div>
+                <table>
+                    <tr>
+                        <th>Perfil</th>
+                        <th>Nombre</th>
+                        <th>Detalle</th>
+                    </tr>
+                    <tr>
+                        <td><img src="{% media 'user.png' %}" alt=""></td>
+                        <td>Miguel Ángel</td>
+                        <td><img src={% media 'info.png' %}" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img src="{% media 'user.png' %}" alt=""></td>
+                        <td>Juan Manuel</td>
+                        <td><img src="{% media 'info.png' %}" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img src="{% media 'user.png' %}" alt=""></td>
+                        <td>Nicolás</td>
+                        <td><img src="{% media 'info.png' %}" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td><img src="{% media 'user.png' %}" alt=""></td>
+                        <td>Juan José</td>
+                        <td><img src="{% media 'info.png' %}" alt=""></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}
